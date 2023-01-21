@@ -1,0 +1,11 @@
+@import url('../colors.css');
+p{
+  font-size: 1rem;
+  line-height:24px;
+}
+.regular{
+  font-weight: 400;
+}
+.bold {
+  font-weight: 700;
+}

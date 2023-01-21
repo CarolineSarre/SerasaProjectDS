@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { Display, HeadingXs } from './components/tipography';
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
           Learn React
         </a>
       </header>
+      <Display>Testando Display</Display>
+      <HeadingXs>Testando HeadingXs</HeadingXs>
     </div>
   );
 }
