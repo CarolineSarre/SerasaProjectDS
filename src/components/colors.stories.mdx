@@ -1,0 +1,62 @@
+import { Meta, ColorPalette, ColorItem  } from '@storybook/addon-docs';
+
+<Meta title="Colors"/>
+
+
+# Cores
+
+O Serasa possui um sistema de cores que se adapta ao modo claro e escuro. Nossa paleta de cores consiste em tons de cinzas, branco e magenta.
+
+# Cinzas
+
+Existem 3 tons de cinza, variando de grayDark (mais escuro) a grayLight (mais claro).
+
+<ColorPalette>
+  <ColorItem
+    title="grayDark"
+    subtitle=" Uso Recomendado: Headings, button labels, tags/badges, e alerts."
+    colors={{ grayDark : 'rgba(0,0,0,0.80)' }}
+  />
+  <ColorItem 
+    title="grayMediun" 
+    subtitle="Uso Recomendado: Placeholders, inactive/disabled inputs e buttons, text." 
+    colors={{ grayMediun: 'rgba(0,0,0,0.60)' }} 
+  />
+  <ColorItem 
+    title="grayLight" 
+    subtitle="Uso Recomendado: borders " 
+    colors={{ grayLight: 'rgba(0,0,0,0.44)' }} 
+  />
+</ColorPalette>
+
+# Cores de Destaque
+
+As cores de destaque ajudam a mudar o foco do usuário para determinados elementos interativos e de alta prioridade, como links, botões e banners de aviso.
+No Serasa a cor escolhida foi o magenta que da o destaque e visibilidade para a marca.
+
+<ColorPalette>
+  <ColorItem
+    title="Magenta"
+    subtitle=" Uso Recomendado: Itens de destaque, hiperlink, action button ..."
+    colors={{ magenta : '#E63888' }}
+  />
+</ColorPalette>
+
+# Branco 
+ Tem sua utilização principal como backgroud
+
+<ColorPalette>
+  <ColorItem
+    title="White"
+    subtitle=" Uso Recomendado: background, text"
+    colors={{ white: '#FFFFFF' }}
+  />
+  <ColorItem
+    title="WhiteHigh"
+    subtitle=" Uso Recomendado: Itens de destaque, hiperlink, action button ..."
+    colors={{ WhiteHigh : 'rgba(255,255,255,0.80)' }}
+  />
+</ColorPalette>
+
+
+

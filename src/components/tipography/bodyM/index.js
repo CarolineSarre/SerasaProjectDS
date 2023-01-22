@@ -17,12 +17,17 @@ BodyM.propTypes = {
   children: PropTypes.string.isRequired,
   classes: PropTypes.string,
   weight: PropTypes.oneOf(['regular', 'bold']),
-  color: PropTypes.oneOf(['nome da classe', 'nome da classe'])
+  color: PropTypes.oneOf(['dark-low',
+  'dark-medium',
+  'dark-high',
+  'magenta',
+  'light-solid',
+  'light-high'])
 };
 
 BodyM.defaultProps = {
   children: null,
   classes: null,
   weight: 'regular',
-  color: 'cinza'
+  color: 'dark-high',
 };

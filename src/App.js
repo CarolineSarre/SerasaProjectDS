@@ -19,8 +19,6 @@ function App() {
           Learn React
         </a>
       </header>
-      <Display>Testando Display</Display>
-      <HeadingXs>Testando HeadingXs</HeadingXs>
     </div>
   );
 }

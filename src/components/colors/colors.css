@@ -1,0 +1,19 @@
+.color-grayDark {
+ color: rgba(0,0,0,0.80);
+}
+.color-grayMediun {
+  color: rgba(0,0,0,0.60);
+ }
+ .color-grayligh {
+  color: rgba(0,0,0,0.44);
+ }
+
+.color-magenta {
+  color: magenta;
+}
+.color-white{
+  color: #ffffff;
+ }
+ .color-whiteHigh {
+  color: rgba(255,255,255,0.80);
+ }

@@ -5,3 +5,4 @@ export {HeadingM} from './headingM';
 export {HeadingS} from './headingS';
 export {HeadingXs} from './headingXs';
 export {Subheading} from './subheading';
+export {Button} from '../buttons'

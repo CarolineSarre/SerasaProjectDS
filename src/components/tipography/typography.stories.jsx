@@ -18,8 +18,12 @@ export default {
     color: {
       control: 'select',
       options: [
-        'cinza',
+        'grayLight',
+        'grayMediun',
+        'grayDark',
         'magenta',
+        'white',
+        'WhiteHigh'
       ]
     }
   },
@@ -27,28 +31,28 @@ export default {
 export const Display = (args) => <DisplayComponent {...args} />;
 Display.args = {
   children: 'Texto',
-  weight: 'regular'
+  
 };
   
 export const HeadingL = (args) => <HeadingLComponent {...args} />;
 HeadingL.args = {
   children: 'Texto',
-  weight: 'regular'
+  
 };
 export const HeadingM = (args) => <HeadingMComponent {...args} />;
 HeadingM.args = {
   children: 'Texto',
-  weight: 'regular'
+  
 };
 export const HeadingS = (args) => <HeadingSComponent {...args} />;
 HeadingS.args = {
   children: 'Texto',
-  weight: 'regular'
+ 
 };
 export const HeadingXs = (args) => <HeadingXsComponent {...args} />;
 HeadingXs.args = {
   children: 'Texto',
-  weight: 'regular' 
+  
 };
 export const Subheading = (args) => <SubheadingComponent {...args} />;
 Subheading.args = {

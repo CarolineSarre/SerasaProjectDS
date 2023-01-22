@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './style.css';
 
-export const Subheading = ({ children, classes, ...props }) => {
+export const Subheading = ({ children, classes,color,...props }) => {
   return (
     <h6
-      className={classes}
+      className={`${classes} color-${color}`}
       {...props}
     >
       {children}
@@ -16,6 +16,12 @@ export const Subheading = ({ children, classes, ...props }) => {
 Subheading.propTypes = {
   children: PropTypes.string.isRequired,
   classes: PropTypes.string,
+  color: PropTypes.oneOf(['dark-low',
+  'dark-medium',
+  'dark-high',
+  'magenta',
+  'light-solid',
+  'light-high'])
 };
 
 Subheading.defaultProps = {
