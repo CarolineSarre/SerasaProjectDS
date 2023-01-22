@@ -1,0 +1,88 @@
+import { Meta, Typeset } from '@storybook/addon-docs/blocks';
+import { Source, Story } from '@storybook/addon-docs';
+
+import dedent from 'ts-dedent';
+
+<Meta title="Typography"/>
+
+export const typography = {
+  type: {
+    primary: 'Roboto',
+  },
+  weight: {
+    regular: '400',
+    bold: '700',
+  },
+  size: {
+    Display: 48,
+    HeadingL: 40,
+    HeadingM: 32,
+    Headings: 24,
+    HeadingXs: 20,
+    Subheading: 16,
+    BodyM: 16,
+  },
+};
+
+export const SampleText = 'Essa é a nossa tipografia.';
+
+# Typography
+
+**Font:** Roboto
+
+**Weights:** 400(regular), 700(bold)
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.Display),
+    Number(typography.size.HeadingL),
+    Number(typography.size.HeadingM),
+    Number(typography.size.Headings),
+    Number(typography.size.HeadingXs),
+    Number(typography.size.Subheading),
+    Number(typography.size.BodyM),
+  ]}
+  fontWeight={typography.weight.bold}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>
+<Typeset
+  fontSizes={[
+    Number(typography.size.BodyM),
+  ]}
+  fontWeight={typography.weight.regular}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>
+
+# Utilização
+
+tipografia sendo utilizada como Tag e recebendo sua variação de cor.
+
+<Source
+  language='html'
+  dark
+  format={false}
+  code={dedent`
+     <Display classe="color-magenta">
+        Texto
+    </Display>
+  `}
+/>
+
+tipografia sendo utilizada e recebendo sua variação de cor via Props.
+
+<Source
+  language='js'
+  dark
+  format={false}
+  code={dedent`
+     Display.defaultProps = {
+  children: null,
+  classes: null,
+  color: 'dark-high',
+};
+  `}
+/>
+
+**Caso a tipografia receba a cor via classe e via Props, prevalece o que for passado via Props.**

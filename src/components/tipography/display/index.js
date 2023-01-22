@@ -27,5 +27,5 @@ Display.propTypes = {
 Display.defaultProps = {
   children: null,
   classes: null,
-  olor: 'dark-high',
+  color: 'dark-high',
 };
